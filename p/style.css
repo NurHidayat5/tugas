@@ -1,0 +1,118 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:#f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #007bb5;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+header nav ul li a.active {
+    font-weight: bold;
+    color: #afa685;
+}
+
+
+/* Main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+/* Artikel */
+article {
+    flex: 2;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+article:hover {
+    transform: scale(1.05);
+}
+article header {
+    border-bottom: 2px solid #007BFF;
+    margin-bottom: 1rem;
+}
+article img {
+    width: 100%;
+    max-width: 600px; /* Gambar tidak melebihi lebar maksimal */
+    margin: 1rem 0;
+    border-radius: 8px; /* Memberikan efek melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+
+/* Aside */
+aside {
+    flex: 1;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #005f87;
+    color: #fff;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
